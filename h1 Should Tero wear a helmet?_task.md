@@ -70,9 +70,34 @@ Challenges of threat modeling:
 https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
 
 
-# x) Infosec scene
+# x) Infosec scene: EP 45: XBox Underground (Part 1)
+- A teenage hacker group XBox Underground
+- responsible for unprecedented cyber attacks on some of the biggest tech firms in the world
+- Members:
+  - David Pokora (Xenomega)
+  - Sanad Nesheiwat (Sonic)
+  - Nathan Leroux (animefre4k)
+  - Austin Alcala (AAmonkey)
+  - Dylan Wheeler (SuperDaE)
+  - Justin May (MTW)
+
+- With the release of their new console Xbox 360 in 2005, Microsoft upgraded their security to avoid development kits (DevKit) getting in the hands of unwanted individuals
+- Eventually some DevKits end up online and for sale on online stores
+- In 2008 David manages to gain several DevKits which grant him access to Xbox developers' testing environment
+- David gains popularity by leaking unreleased information from the environment
+- Other hackers start to get interested and want to participate in the hacking activities
+- In 2011 Dylan gets a list of Epic Games accounts and finds an IT employee' credentials in it
+- Credentials grant the hackers access to Epic Games' servers and their first big discovery, an unreleased game called "Gears of War 3"
+- Epic Games contacts the FBI because the game is leaked online, but with no leads yet
+- Dylan finds another file containing all the company's employees' credentials, granting him full access to the network
+- Through going through files, Dylan makes a great discovery and manages to further hack into some major companies networks' (such as Activision, Microsoft, Valve, EA, Bungie, Blizzard Entertainment)
+- Group expands their hacking and hack into several major companies which stray further from gaming (which was the main objective at the start)
+- Through Zombie studios, they discover a secret path to U.S military server, where they are working on an Apache Simulator game
+- Over the 2 years the group has been doing activities that could lead them to prison, which they are aware of and jokingly talk what they would call their gang in prison, Underground Xbox.
 
 https://darknetdiaries.com/episode/45/
+https://www.youtube.com/watch?v=LZkl0_9xFOU
+
 
 # a) Security hygiene
 While the security practices that a person or a company might need depends on the situation, there are some common practices that are recommended to follow which also occur in our everyday life.
@@ -84,3 +109,49 @@ These are for example:
 - Securing your devices
 - Backing up data
 - Being wary of scams
+
+
+# b) Make-belief boogie-man
+This threat model is for a imaginary health care clinic
+
+## 1. What are we working on?
+Key assets:
+- Customer health data
+- Customer billing and personal information data
+- Software and firmware
+
+Security Supports Business:
+- For the health care clinic, customer trust is essential. Company relies heavily on customer confidentiality and without it the company's economy and reputation would crash
+- Managing inventory and making sure the company has everything available (such as devices)
+
+Customer Touchpoints:
+- Website, where customers can ask for assistance, manage account settings and see information on the company
+- Cloud, where we store the customers data for analyzing and storing.
+
+## What can go wrong?
+STRIDE MODEL:
+- Spoofing: Attacker steals customer credentials by impersonating the company
+- Tampering: Attacker tampers with the customer data
+- Repudiation: Attacker modifies the logs to spread false information
+- Information Disclosure: Attacker gains access to customer data through cloud breach
+- Denial of Service (DoS): Attacker disrupts the website or cloud, making them unaccessible to both employees and customers
+- Elevation of Privilige: A user might get access to admin rights to the servers
+
+Prioritization of Risks:
+- High: Health data breach
+- Medium: Tampering
+- Low: DoS
+
+## What are we going to do about it?
+Minimize Exposure
+- Multi-factor authentication
+- Securing the website and database
+
+Limiting access
+- Restricting access to database from unauthorized personnel
+- Proper validation to make sure data is correct
+
+## Did we do a good enough job?
+- Customer satisfaction and company reputation
+- Low count of data breaches and incidents
+
