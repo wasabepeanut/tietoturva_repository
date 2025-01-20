@@ -96,6 +96,7 @@ https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
 - Over the 2 years the group has been doing activities that could lead them to prison, which they are aware of and jokingly talk what they would call their gang in prison, Underground Xbox.
 
 https://darknetdiaries.com/episode/45/
+
 https://www.youtube.com/watch?v=LZkl0_9xFOU
 
 
