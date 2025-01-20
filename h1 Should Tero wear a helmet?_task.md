@@ -6,6 +6,7 @@ Overall concept of threat modeling:
 - Understanding the threats and creating countermeasures against them
 - Making use of the key questions to help us evaluate the results of our threat modeling
 - Everyone is able to and should threat model.
+* asdsad
 
 Why threat model?:
 - Improves the security and privacy of the system
@@ -51,16 +52,31 @@ https://www.youtube.com/playlist?list=PLCVhBqLDKoOOZqKt74QI4pbDUnXSQo0nf
 ## Threat Modeling Cheat Sheet
 
 Overall concept of threat modeling:
+- Structured and repeatable process to gain insights into the security details of a system
+- Analyzing system from the attacker's "point of view", focusing on the ways the attacker can exploit a system.
+- Should be kept up to date and maintained beside the system
+- Should be treated as an essential task in the process
 
+Why threat model?:
+- Important concept to keep in mind
+- Helps to identify threats and regulate responses to them
+- Securing the system right from the start, to avoid subsequent problems
+- Heightens the participants mindset through feedbacks and team effort
 
+Challenges of threat modeling:
+- Overlooking potential threats or incorrectly assessing risks due to lack of experience and/or knowledge
+- Time-consuming, which may lead to tight schedules and pressure to succeed
+- Communication between different parties, which might misdirect the threat model or result in an incomplete threat model
 
 https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
 
 
 # x) Infosec scene
 
+https://darknetdiaries.com/episode/45/
+
 # a) Security hygiene
-While the security practices that a person or a company might need depends on the situation, there are some common practices that are recommended to follow and also occur in our everyday life.
+While the security practices that a person or a company might need depends on the situation, there are some common practices that are recommended to follow which also occur in our everyday life.
 These are for example:
 - Strong and unique passwords
 - Multi-Factor Authentication
