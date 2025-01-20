@@ -6,7 +6,6 @@ Overall concept of threat modeling:
 - Understanding the threats and creating countermeasures against them
 - Making use of the key questions to help us evaluate the results of our threat modeling
 - Everyone is able to and should threat model.
-* asdsad
 
 Why threat model?:
 - Improves the security and privacy of the system
