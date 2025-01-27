@@ -91,5 +91,6 @@
 
 ## References
 https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
-https://attack.mitre.org/
+
+https://attack.mitre.org
 https://attack.mitre.org/resources/faq/#general-faq
