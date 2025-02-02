@@ -14,6 +14,20 @@
 - It is important to get the latest available features on your system, by giving the command "sudo apt-get update", which updates the system by installing the latest available packages. (Karvinen 3.2.2020)
 
 # Can't fish
+- ip a
+
+![image](https://github.com/user-attachments/assets/b8951ee4-54d6-4554-a36e-966d99c4ad38)
+- shutting down
+
+![image](https://github.com/user-attachments/assets/a5a57d4a-d705-46fc-a98f-9c40e4366747)
+
+- test pings
+
+![image](https://github.com/user-attachments/assets/20e35da3-2e25-48b4-9ea3-a1923da70ff0)
+
+
+nmcli networking off
+
 ![image](https://github.com/user-attachments/assets/726337f9-ec2f-4c74-8375-c8e8908cd2c1)
 
 
