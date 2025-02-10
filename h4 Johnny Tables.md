@@ -59,3 +59,5 @@ After rebooting our virtualbox, we can now proceed to install WebGoat and run it
 
 After creating my user, I have succesfully logged in WebGoat.
 
+# b) WebGoat, Developer tools
+
