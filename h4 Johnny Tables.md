@@ -47,6 +47,8 @@ First we are going to install Java for running Java archive files, with the foll
     sudo apt-get install openjdk-17-jre
 ![image](https://github.com/user-attachments/assets/e48ee87c-084c-422e-9029-fb84cc1797c1)
 
-Since I have already installed firewall on my Debian, lets enable the firewall
+Since I have already installed firewall on my Debian, lets enable the firewall with;
+
+    sudo ufw enable
 ![image](https://github.com/user-attachments/assets/58f7bbfe-1a92-409e-868a-3c2b094f91ad)
 
