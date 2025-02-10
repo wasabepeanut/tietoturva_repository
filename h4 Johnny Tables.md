@@ -83,6 +83,10 @@ In the second task we will click a button to make a HTTP request, after which we
 
 Our second task is now done.
 
+# c) Updating Linux
+On this task we will update our operating system and every application on our Linux
 
-
-
+Let us commit these next commands
+    
+    sudo apt-get update
+    sudo apt-get dist-upgrade
