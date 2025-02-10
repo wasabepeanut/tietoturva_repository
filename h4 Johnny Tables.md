@@ -7,7 +7,7 @@ Description
 
 Prevention
 - To prevent these attacks and to improve the security measures, common security measures that might seem obvious should not be ignored
-- Logging the user logins, individually implementing permissions on specific operations and making sure confidential data is secured and not on public servers to minimize and possibly prevent these attacks.
+- Logging the user logins, individually implementing permissions on specific operations and making sure confidential data is secured and not on public servers to minimize and possibly prevent these attacks. (OWASP)
 
 ## Security Misconfiguration
 
@@ -15,7 +15,7 @@ Description
 - Improperly configured systems and networks expose the sensitive data and grant unauthorized access for attackers
 
 Prevention
-- Automation of some security processes and configurations, keeping the system and network minimalistic without unnecessary features and keeping the system up to date.
+- Automation of some security processes and configurations, keeping the system and network minimalistic without unnecessary features and keeping the system up to date. (OWASP)
 
 ## Vulnerable and Outdated Components
 
@@ -25,7 +25,7 @@ Description
 Prevention
 - Regular checks and updates on the software to keep the system up to date
 - Scanning tools to check for vulnerabilities
-- Removing unnecessary components and only using components from trusted sources
+- Removing unnecessary components and only using components from trusted sources. (OWASP)
 
 ## Injection
 
@@ -36,7 +36,7 @@ Description
 Prevention
 - Implementing proper validation on specific data to allow only certain data formats
 - Making use of security headers
-- A last resort safety measure in case of an injection
+- A last resort safety measure in case of an injection. (OWASP)
 
 # a) Installing WebGoat
 Following the instructions, we will proceed to install WebGoat to our Debian virtualbox.
@@ -81,7 +81,7 @@ In the second task we will click a button to make a HTTP request, after which we
 
 ![image](https://github.com/user-attachments/assets/64c46075-d3bd-4b2c-a341-8fde7cf81d0b)
 
-Our second task is now done.
+Our second task is now done. (Karvinen 13.11.2023)
 
 # c) Updating Linux
 On this task we will update our operating system and every application on our Linux
@@ -175,3 +175,59 @@ Task 8:
     (area < 3000000 AND population > 250000000)
 
 ![image](https://github.com/user-attachments/assets/89835946-4bbf-42c8-9a3e-479a8dca9bfd)
+
+Task 9:
+
+    SELECT name, ROUND(population/1000000, 2), ROUND(gdp/1000000000, 2) FROM world
+    WHERE continent = 'South America'
+
+![image](https://github.com/user-attachments/assets/46c4a62b-5960-4006-a502-e6a69beb6b0d)
+
+Task 10:
+
+    SELECT name, ROUND(gdp/population, -3) FROM world
+    WHERE gdp >= 1000000000000
+
+![image](https://github.com/user-attachments/assets/0586223c-1b21-4541-a02a-79d5689270d3)
+
+Task 11:
+
+    SELECT name, capital FROM world
+     WHERE LENGTH(name) = LENGTH(capital)
+
+![image](https://github.com/user-attachments/assets/e57b6c24-6fb2-4960-b5c5-79f90c55f555)
+
+Task 12:
+
+    SELECT name, capital FROM world
+    WHERE LEFT(name, 1) = LEFT(capital, 1)
+    AND
+    name != capital
+
+![image](https://github.com/user-attachments/assets/cfc948b6-d55b-408c-bfdb-e55d8e4c44ab)
+
+Task 13:
+
+    SELECT name FROM world
+    WHERE name LIKE '%a%'
+      AND name LIKE '%e%' 
+      AND name LIKE '%i%' 
+      AND name LIKE '%o%' 
+      AND name LIKE '%u%'
+      AND name NOT LIKE '% %';
+
+![image](https://github.com/user-attachments/assets/41f6d4ee-7f5e-4d67-b55f-e07d77cb19d5)
+
+# Portswigger Labs
+
+# References
+
+OWASP. A01:2021 – Broken Access Control. OWASP Top 10 - 2021. URL: https://owasp.org/Top10/A01_2021-Broken_Access_Control/. Accessed 10.2.2025.
+
+OWASP. A03:2021 – Injection. OWASP Top 10 - 2021. URL: https://owasp.org/Top10/A03_2021-Injection/. Accessed 10.2.2025.
+
+OWASP. A05:2021 – Security Misconfiguration. OWASP Top 10 - 2021. URL: https://owasp.org/Top10/A05_2021-Security_Misconfiguration/. Accessed 10.2.2025.
+
+OWASP. A06:2021 – Vulnerable and Outdated Components. OWASP Top 10 - 2021. URL: https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/. Accessed 10.2.2025.
+
+Karvinen, T. 13.11.2023. Try Web Hacking on New Webgoat 2023.4. Tero Karvinen. URL: https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/. Accessed 10.2.2025.
