@@ -45,4 +45,5 @@ First we are going to install Java for running Java archive files, with the foll
 
     sudo apt-get update
     sudo apt-get install openjdk-17-jre
+![image](https://github.com/user-attachments/assets/e48ee87c-084c-422e-9029-fb84cc1797c1)
 
