@@ -53,6 +53,7 @@ Since I have already installed firewall on my Debian, lets enable the firewall
 ![image](https://github.com/user-attachments/assets/58f7bbfe-1a92-409e-868a-3c2b094f91ad)
 
 After rebooting our virtualbox, we can now proceed to install WebGoat and run it according to the instructions.
+
     java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.8.jar
 ![image](https://github.com/user-attachments/assets/f7c0cd8f-59bb-4876-a8c8-76bce17c206b)
 
