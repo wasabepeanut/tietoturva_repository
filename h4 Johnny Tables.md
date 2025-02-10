@@ -218,8 +218,6 @@ Task 13:
 
 ![image](https://github.com/user-attachments/assets/41f6d4ee-7f5e-4d67-b55f-e07d77cb19d5)
 
-# Portswigger Labs
-
 # References
 
 OWASP. A01:2021 – Broken Access Control. OWASP Top 10 - 2021. URL: https://owasp.org/Top10/A01_2021-Broken_Access_Control/. Accessed 10.2.2025.
