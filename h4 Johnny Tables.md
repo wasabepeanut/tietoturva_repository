@@ -90,3 +90,88 @@ Let us commit these next commands
     
     sudo apt-get update
     sudo apt-get dist-upgrade
+
+After a few seconds the update is complete.
+
+# d) SQLZoo
+On this task we will proceed to SQLZoo and complete the tasks "0 SELECT basics"and "2 SELECT from World".
+
+## 0 SELECT 
+Task 1:
+
+    SELECT population FROM world
+      WHERE name = 'Germany'
+
+![image](https://github.com/user-attachments/assets/6eb87c1d-1614-4d5b-87a9-b8ee28bf8504)
+
+Task 2:
+
+    SELECT name, population FROM world
+      WHERE name IN ('Sweden', 'Norway', 'Denmark');
+
+![image](https://github.com/user-attachments/assets/4959facb-d2e7-49c9-b38d-4302feba3ef4)
+
+Task 3:
+
+    SELECT name, area FROM world
+      WHERE area BETWEEN 200000 AND 250000
+    
+![image](https://github.com/user-attachments/assets/1b468f00-655a-432a-9b5a-fd1e074b7fc3)
+
+## 2 SELECT
+Task 1:
+
+    SELECT name, continent, population FROM world
+
+![image](https://github.com/user-attachments/assets/588b38d7-b9ca-4363-b670-f61d08cdd983)
+
+Task 2:
+
+    SELECT name FROM world
+    WHERE population > 200000000    
+
+![image](https://github.com/user-attachments/assets/1112f427-bc2b-4f36-8bfd-4aa033bd2336)
+
+Task 3:
+
+    SELECT name, gdp/population FROM world
+    WHERE population > 200000000
+
+![image](https://github.com/user-attachments/assets/3a43104e-8ecd-489f-9f71-dc8323a64713)
+
+Task 4:
+
+    SELECT name, population/1000000 FROM world
+    WHERE continent = "South America"
+
+![image](https://github.com/user-attachments/assets/5be5e6d9-d35e-428f-9a4f-a417bec427ca)
+
+Task 5:
+
+    SELECT name, population FROM world
+    WHERE name in ('France', 'Germany', 'Italy')
+
+![image](https://github.com/user-attachments/assets/5352ab1e-b6fe-41d5-a54a-c7e4173fe753)
+
+Task 6:
+
+    SELECT name FROM world
+    WHERE name LIKE "%United%"
+
+![image](https://github.com/user-attachments/assets/e0230941-d45a-42ca-a0ea-53961d946898)
+
+Task 7:
+
+    SELECT name, population, area FROM world
+    WHERE area > 3000000 OR population > 250000000
+
+![image](https://github.com/user-attachments/assets/caf163ec-3a35-440b-87f6-55a2d7e500e0)
+
+Task 8:
+
+    SELECT name, population, area FROM world
+    WHERE (area > 3000000 AND population < 250000000) 
+    OR 
+    (area < 3000000 AND population > 250000000)
+
+![image](https://github.com/user-attachments/assets/89835946-4bbf-42c8-9a3e-479a8dca9bfd)
