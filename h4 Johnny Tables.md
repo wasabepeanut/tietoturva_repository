@@ -43,6 +43,7 @@ Prevention
 - Following the instructions, we will proceed to install WebGoat to our Debian virtualbox.
 - First we are going to install Java for running Java archive files, with the following commands
 
+
     sudo apt-get update
 
 ![image](https://github.com/user-attachments/assets/b7dfef12-6805-4178-a52c-933a10a930fa)
