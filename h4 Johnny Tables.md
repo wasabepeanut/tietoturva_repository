@@ -61,3 +61,26 @@ After creating my user, I have succesfully logged in WebGoat.
 
 # b) WebGoat, Developer tools
 
+After logging in WebGoat, we will proceed to our first task, Developer Tools.
+
+Let us test our console in the WebGoat to check if it works correctly.
+![image](https://github.com/user-attachments/assets/9e84e056-ec7c-4bc3-a147-67d24dc7a803)
+
+Now for our first actual task in Developer Tools we should get a response from the console and copypaste the random number to the textfield
+
+    webgoat.customjs.phoneHome()
+![image](https://github.com/user-attachments/assets/41efa005-c256-4a29-8d3c-5e18d83b9b20)
+![image](https://github.com/user-attachments/assets/9b2b3186-d0ce-4497-ad7a-155468d273f2)
+
+The randomly generated number was correct.
+
+In the second task we will click a button to make a HTTP request, after which we will have to find a specific request with a content networkNum.
+
+![image](https://github.com/user-attachments/assets/069c1253-1bff-45be-bb0a-724301b03340)
+![image](https://github.com/user-attachments/assets/64c46075-d3bd-4b2c-a341-8fde7cf81d0b)
+
+Our second task is now done.
+
+
+
+
