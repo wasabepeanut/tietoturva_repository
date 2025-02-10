@@ -39,9 +39,10 @@ Prevention
 - A last resort safety measure in case of an injection
 
 # WebGoat
+Following the instructions, we will proceed to install WebGoat to our Debian virtualbox.
 
-- Following the instructions, we will proceed to install WebGoat to our Debian virtualbox.
-- First we are going to install Java for running Java archive files, with the following commands
+First we are going to install Java for running Java archive files, with the following commands.
 
     sudo apt-get update
-  
+    sudo apt-get install openjdk-17-jre
+
