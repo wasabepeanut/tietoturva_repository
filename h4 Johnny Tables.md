@@ -56,4 +56,6 @@ After rebooting our virtualbox, we can now proceed to install WebGoat and run it
 
     java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.8.jar
 ![image](https://github.com/user-attachments/assets/f7c0cd8f-59bb-4876-a8c8-76bce17c206b)
+![image](https://github.com/user-attachments/assets/8ffa9c80-6497-41c3-9bef-c56ba4640936)
 
+After creating my user, I have succesfully logged in WebGoat.
