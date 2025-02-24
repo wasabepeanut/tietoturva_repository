@@ -131,6 +131,18 @@ How it works:
 
 Installation:
 
+    sudo apt-get install pass
+
+After installing pass, we can initialize pass with our key
+
+    pass init "3F04 4F7C 7846 FC60 78E9 53A9 98F9 9AEF 82D4 65AD"
+
+Now pass has been succesfully initialized and we can start inserting passwords with the command
+
+    pass insert [folder}/[your email]
+
+![image](https://github.com/user-attachments/assets/497aca73-4428-44e6-9299-845940e4ca7d)
+
 
 Reasons to use password manager:
 - Strong and unique passwords for every platform, to avoid reusing passwords
