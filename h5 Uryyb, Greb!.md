@@ -123,6 +123,13 @@ After generating the ssh-key, let us copy this key to the ssh server.
 Now we are able to login to our ssh server without password.
 
 # Password manager
+For this task I chose "Pass" as my cloudless and open password manager.
+
+Reasons to use password manager:
+- Strong and unique passwords for every platform, to avoid reusing passwords
+- Protection against phishing attacks
+- Time efficiency
+- Multi-factor Authentication
 
 
 # References
