@@ -18,8 +18,14 @@
   - Instance deduction: a cryptanalyst finds the plaintext
   - Information deduction: a cryptanalyst gains some information about the key or plaintext. (Schneier 3.2015)
 
+
 # PGP
 - GNU privacy guard, or "gpg" is a popular tool used for PGP encryption.
+- In the article we will be taught hands on experience on how to generate the keys, encrypt and decrypt a message between two parties.
+- We can verify the other' public keys after checking them and marking them as trusted. This will allow the sender to verify the correct receiver and the receiver to verify the origin of the message.
+
+## Encryption and decryption practice
+
 - In this exercise we are simulating a "real conversation" between me and Alice, using gpg.
   
 First we shall update our machine and install the tools with the commands:
@@ -87,6 +93,7 @@ I have received a new encrypted message, let us decrypt it
 
 Aftermath: I have now learned how to generate keypairs and send encrypted messages with the gpg tool. This was my first time doing this so it was interesting and nice to learn something new. 
 
+
 # OpenSSH
 ## Installation
 First let us install openSSH server
@@ -116,6 +123,7 @@ After generating the ssh-key, let us copy this key to the ssh server.
 Now we are able to login to our ssh server without password.
 
 # Password manager
+
 
 # References
 Karvinen, T. 17.11.2023. PGP - Send Encrypted and Signed Message - gpg. Tero Karvinen. URL: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/. Accessed: 24.2.2025.
