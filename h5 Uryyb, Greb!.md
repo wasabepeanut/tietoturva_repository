@@ -16,7 +16,7 @@
   - Total break: the key is revealed to a cryptanalyst
   - Global deduction: a cryptanalyst finds a solution through an alternate algorithm
   - Instance deduction: a cryptanalyst finds the plaintext
-  - Information deduction: a cryptanalyst gains some information about the key or plaintext.
+  - Information deduction: a cryptanalyst gains some information about the key or plaintext. (Schneier, B. 2015)
 
 # PGP
 - 
