@@ -109,6 +109,7 @@ I have received a new encrypted message, let us decrypt it
 Aftermath: I have now learned how to generate keypairs and send encrypted messages with the gpg tool. This was my first time doing this so it was interesting and nice to learn something new. 
 
 # OpenSSH
+## Installation
 First let us install openSSH server
 
     sudo apt install openssh-server
@@ -118,11 +119,24 @@ After installing the ssh server, let us connect to it using our own username and
     ssh duyp@localhost
 ![image](https://github.com/user-attachments/assets/5c4d5e70-f8dc-4c01-ae0f-da4b6b319e72)
 
-As we can see with the "who" command, there are 2 users now logged in the server.
-![image](https://github.com/user-attachments/assets/5ca4754c-dcbc-4018-bd7f-b8cd18a64d49)
+As we can see with the "who" command, there are 2 users now logged in the server, which means that we have succesfully connected to our ssh.
+![image](https://github.com/user-attachments/assets/7921133b-4587-471a-af46-bf7a72a16689)
 
-Now we have succesfully connected to our own ssh server.
+## Automation
 
+We will now proceed to automate the earlier process using keypairs. First we will generate the keys.
+
+    ssh-keygen
+![image](https://github.com/user-attachments/assets/62051f06-3e48-48e0-a91e-14c4f307e9b1)
+
+After generating the ssh-key, let us copy this key to the ssh server.
+
+    ssh-copy-id duyp@localhost
+![image](https://github.com/user-attachments/assets/60398a80-95ff-4df6-a153-eaf0c758529a)
+
+Now we are able to login to our ssh server without password.
+
+# Password manager
 
 # References
 Karvinen, T. 17.11.2023. PGP - Send Encrypted and Signed Message - gpg. Tero Karvinen. URL: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/. Accessed: 24.2.2025.
