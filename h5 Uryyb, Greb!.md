@@ -41,28 +41,43 @@
 
 # PGP
 - GNU privacy guard, or "gpg" is a popular tool used for PGP encryption.
-- Public and secret key generated
+- In this exercise we are simulating a "real conversation" between me and Alice, using gpg.
+  
+- First we shall update our machine and install the tools with the commands:
+
+    sudo apt-get updatesudo apt-get install gpg micro psmisc
+  
+
 ![image](https://github.com/user-attachments/assets/62e128e6-06ff-47a3-bea7-f261d2de7e0e)
 
 - public key export
+
 ![image](https://github.com/user-attachments/assets/a0775013-9b56-4a3c-8366-50abf0393cb6)
 
 - alice gpg homedir
+
 ![image](https://github.com/user-attachments/assets/bb7dd3d7-31e2-4a5e-9d20-164428f71d00)
 
 - alice keys
+
 ![image](https://github.com/user-attachments/assets/12862c98-f7c4-4232-9b36-66aa832a99b1)
 
 - importing key to alice
+
 ![image](https://github.com/user-attachments/assets/beb06955-e6ae-4285-ac53-fc19ac2b3665)
 
 - Alice signed my key
+
 ![image](https://github.com/user-attachments/assets/bc3f5d2f-f6e2-40e2-9e04-87c6412259a3)
 
 - I sign alice' key
+
 ![image](https://github.com/user-attachments/assets/aea037a6-becd-49c3-b2ea-de916ee49afa)
 
-asda
+- Decrypting the message
+
+![image](https://github.com/user-attachments/assets/41a413ae-6e6b-4fae-ac24-afa70e6e2d66)
+
 
 # References
 Karvinen, T. 17.11.2023. PGP - Send Encrypted and Signed Message - gpg. Tero Karvinen. URL: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/. Accessed: 24.2.2025.
