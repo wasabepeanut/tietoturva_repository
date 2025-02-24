@@ -123,7 +123,11 @@ After generating the ssh-key, let us copy this key to the ssh server.
 Now we are able to login to our ssh server without password.
 
 # Password manager
-For this task I chose "Pass" as my cloudless and open password manager.
+- For this task I chose "Pass" as my cloudless and open password manager.
+- Pass is a simple and minimalistic, CLI-based password manager. It also uses GPG for encryption and storage, which we have earlier learned a lot about.
+How it works:
+- Encrypts passwords with GPG, and stores them as plain-text files in a directory.
+
 
 Reasons to use password manager:
 - Strong and unique passwords for every platform, to avoid reusing passwords
