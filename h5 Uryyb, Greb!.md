@@ -43,30 +43,44 @@
 - GNU privacy guard, or "gpg" is a popular tool used for PGP encryption.
 - In this exercise we are simulating a "real conversation" between me and Alice, using gpg.
   
-- First we shall update our machine and install the tools with the commands:
+First we shall update our machine and install the tools with the commands:
 
-    sudo apt-get updatesudo apt-get install gpg micro psmisc
-  
+    sudo apt-get update
+    sudo apt-get install gpg micro psmisc
 
+After installing the tool, I generated my keypair.
+
+    gpg --gen-key
 ![image](https://github.com/user-attachments/assets/62e128e6-06ff-47a3-bea7-f261d2de7e0e)
 
-- public key export
+Since Alice is not actually real, we will simulate an Alice and give her own settings.
 
-![image](https://github.com/user-attachments/assets/a0775013-9b56-4a3c-8366-50abf0393cb6)
-
-- alice gpg homedir
-
+    mkdir alice/
+    chmod og-rwx alice/
+    cd alice
+    gpg --homedir . --fingerprint
 ![image](https://github.com/user-attachments/assets/bb7dd3d7-31e2-4a5e-9d20-164428f71d00)
 
-- alice keys
+Now let us generate Alice her own keys
 
+    gpg --homedir . --gen-key
 ![image](https://github.com/user-attachments/assets/12862c98-f7c4-4232-9b36-66aa832a99b1)
 
-- importing key to alice
+Now if Alice wants to communicate with me, she will need my public key, which I will first need to export and send it to her (because Alice is not real).
 
-![image](https://github.com/user-attachments/assets/beb06955-e6ae-4285-ac53-fc19ac2b3665)
+    gpg --export --armor --output duy.pub
+    cp -v duy.pub alice/
+    
+After receiving the export, Alice will have to import the key for it to be usable.
 
-- Alice signed my key
+    gpg --homedir . --import duy.pub
+    gpg --homedir . --fingerprint
+
+![image](https://github.com/user-attachments/assets/a0b73497-32d2-46d0-8e44-979ed32ac8de)
+
+Now that Alice has my public key, Alice will sign it to mark it as trusted.
+
+    gpg --homedir . --sign-key "3F04 4F7C 7846 FC60 78E9 53A9 98F9 9AEF 82D4 65AD"
 
 ![image](https://github.com/user-attachments/assets/bc3f5d2f-f6e2-40e2-9e04-87c6412259a3)
 
