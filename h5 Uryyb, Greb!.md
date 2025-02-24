@@ -84,21 +84,48 @@ Now that Alice has my public key, Alice will sign it to mark it as trusted.
 
 ![image](https://github.com/user-attachments/assets/bc3f5d2f-f6e2-40e2-9e04-87c6412259a3)
 
-- I sign alice' key
+Alice wants to sign the messages she sends to me, so we will have to do the same process for myself.
 
-![image](https://github.com/user-attachments/assets/aea037a6-becd-49c3-b2ea-de916ee49afa)
+After the process I have Alice' public key and marked it as trusted.
 
-- Decrypting the message
+Now Alice sends me a message and encrypts it.
+
+    cd alice
+    micro message.txt
+
+    gpg --homedir . --encrypt --recipient tero@example.com.invalid --sign --output     encrypted.pgp --armor message.txt
+
+After this Alice has generated the message in an encrypted file called "encrypted.pgp", and sends it to me.
+
+    cd
+    cp -v alice/encrypted.pgp
+
+I have received a new encrypted message, let us decrypt it 
+
+    gpg --decrypt encrypted.pgp
 
 ![image](https://github.com/user-attachments/assets/41a413ae-6e6b-4fae-ac24-afa70e6e2d66)
 
+Aftermath: I have now learned how to generate keypairs and send encrypted messages with the gpg tool. This was my first time doing this so it was interesting and nice to learn something new. 
+
+# OpenSSH
+First let us install openSSH server
+
+    sudo apt install openssh-server
+
+After installing the ssh server, let us connect to it using our own username and ip address.
+
+    ssh duyp@localhost
+![image](https://github.com/user-attachments/assets/5c4d5e70-f8dc-4c01-ae0f-da4b6b319e72)
+
+As we can see with the "who" command, there are 2 users now logged in the server.
+![image](https://github.com/user-attachments/assets/5ca4754c-dcbc-4018-bd7f-b8cd18a64d49)
+
+Now we have succesfully connected to our own ssh server.
+
 
 # References
 Karvinen, T. 17.11.2023. PGP - Send Encrypted and Signed Message - gpg. Tero Karvinen. URL: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/. Accessed: 24.2.2025.
 
 Schneier, Bruce. 3.2015. Foundations. O'reilly Media. URL: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec006. Accessed: 24.2.2025.
 
-# References
-Karvinen, T. 17.11.2023. PGP - Send Encrypted and Signed Message - gpg. Tero Karvinen. URL: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/. Accessed: 24.2.2025.
-
-Schneier, Bruce. 3.2015. Foundations. O'reilly Media. URL: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec006. Accessed: 24.2.2025.
