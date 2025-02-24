@@ -125,18 +125,23 @@ Now we are able to login to our ssh server without password.
 # Password manager
 - For this task I chose "Pass" as my cloudless and open password manager.
 - Pass is a simple and minimalistic, CLI-based password manager. It also uses GPG for encryption and storage, which we have earlier learned a lot about.
+
 How it works:
 - Encrypts passwords with GPG, and stores them as plain-text files in a directory.
+
+Installation:
 
 
 Reasons to use password manager:
 - Strong and unique passwords for every platform, to avoid reusing passwords
 - Protection against phishing attacks
 - Time efficiency
-- Multi-factor Authentication
+- Multi-factor Authentication. (Donenfeld 2021)
 
 
 # References
+Donenfeld, J.A. 2021. pass - the standard unix password manager. passwordstore. URL: http://passwordstore.org/. Accessed: 24.2.2025.
+
 Karvinen, T. 17.11.2023. PGP - Send Encrypted and Signed Message - gpg. Tero Karvinen. URL: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/. Accessed: 24.2.2025.
 
 Schneier, Bruce. 3.2015. Foundations. O'reilly Media. URL: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec006. Accessed: 24.2.2025.
