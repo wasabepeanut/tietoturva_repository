@@ -192,9 +192,9 @@ Let us see what is in the zip file.
 
 ![image](https://github.com/user-attachments/assets/54e89d78-a343-4159-8798-68393b17ff19)
 
-![image](https://github.com/user-attachments/assets/dd13d91d-beac-47b0-b6c9-f1f16b503e8b)
-
 The zip file contained a message.
+
+![image](https://github.com/user-attachments/assets/dd13d91d-beac-47b0-b6c9-f1f16b503e8b)
 
 
 # References
