@@ -6,12 +6,14 @@
   a broken plate might not be impossible, but is really difficult.
 - Trapdoor one-way function: one-way function that makes the difficult part achievable with       secret information. (Schneier 3.2015)
 
+
 # One-Way Hash Functions
 - A core element in modern cryptography.
 - In short, converts a input string (**pre-image**) into an fixed-length output string (**hash    value**).
 - Collision-free: Two  pre-images can not be determined with the same hash value.
 - Message authentication code (MAC): One-way function with a secret key. Hash value can be     
   verified only by one with the key. (Schneier 3.2015)
+
 
 # a) Hashcat 🐈
 - Tool to "crack" hash values by going through every word in the dictionary.
@@ -68,6 +70,7 @@ Let us see what was the hash:
 
 As we can see the hash equals to summer. (Karvinen 6.4.2022)
 
+
 # b) Crack the hash
 In this task we will use our previously learned skills to crack the hash provided by our lecturer.
 
@@ -85,7 +88,86 @@ After waiting for a while, our hash got cracked:
 
 ![image](https://github.com/user-attachments/assets/30db0453-1acd-4f4f-a0d9-2067af4c58c7)
 
+
+# m) and n) Cracking File Password
+In this task our goal is to crack a ZIP archive password provided in the article.
+
+## Installation
+First we will need to install some tools and libraries:
+
+    sudo apt-get update
+    sudo apt-get -y install micro bash-completion git build-essential libssl-dev zlib1g zlib1g-dev zlib-gst libbz2-1.0 libbz2-dev atool zip wget
+
+After executing the second command, I got an error in finding the package "zlib-gst".
+After doing some searching in the web, I decided to execute the command again without this package.
+
+## John the Ripper
+After installing the tools and packages, we will then proceed to clone John (project) into our directory and do some configurations:
+
+    git clone --depth=1 https://github.com/openwall/john.git
+    cd john/src/	
+    ./configure
+
+After a while, the configure is ready and the command to compile is shown in the output:
+
+    make -s clean && make -sj2
+
+Now John is compiled. The new executables and scripts are located in the folder run/.
+
+    cd ../run/
+    ls -1
+
+![image](https://github.com/user-attachments/assets/df380a27-19c8-409e-b9aa-e1aebf29d17b)
+
+As we can see in the picture, the content matches the examples executables.
+
+And at last we run John.
+
+    $HOME/john/run/john
+
+![image](https://github.com/user-attachments/assets/c1b025a9-7f74-48e3-9ae5-70da94b399e9)
+
+## Cracking
+By now we should have John the Ripper running.
+
+We will now proceed to download Tero's ZIP file for cracking.
+
+    wget https://TeroKarvinen.com/2023/crack-file-password-with-john/tero.zip
+
+Now let us try to unzip the file to make sure it is password protected.
+
+    unzip tero.zip
+
+![image](https://github.com/user-attachments/assets/9453d64e-08f7-48bb-880d-a16fd019b36a)
+
+As we can see the file is protected.
+
+To crack a ZIP password we will have to complete a two step process: First extract the hash value into a new file.
+
+    $HOME/john/run/zip2john tero.zip >tero.zip.hash
+
+Second, perform a dictionary attack on the hash
+
+    $HOME/john/run/john tero.zip.hash 
+
+![image](https://github.com/user-attachments/assets/56786bea-ffea-4b31-969e-7c7a4055255c)
+
+The attack was succesful, now we should be able get in the ZIP file with this password.
+
+![image](https://github.com/user-attachments/assets/5f08db8c-46fc-4c3b-acf0-563765e54e46)
+
+Now to show the content of the secret file.
+
+    cat secretFiles/SECRET.md
+
+![image](https://github.com/user-attachments/assets/e4981149-c983-4f66-9cd7-5ae8331d2cad)
+
+We have now cracked our first file password. (Karvinen 9.2.2023)
+
+
 # References
+Karvinen, T. 9.2.2023. Crack File Password With John. Tero Karvinen. URL: https://terokarvinen.com/2023/crack-file-password-with-john/. Accessed: 3.3.2025.
+
 Karvinen, T. 6.4.2022. Cracking Passwords with Hashcat. Tero Karvinen. URL: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/. Accessed: 2.3.2025.
 
 Schneier, B. 3.2015. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. Chapter 2.3: One-Way Functions. O'reilly Media. URL: https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02-sec003. Accessed: 2.3.2025.
