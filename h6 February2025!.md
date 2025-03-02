@@ -89,7 +89,7 @@ After waiting for a while, our hash got cracked:
 ![image](https://github.com/user-attachments/assets/30db0453-1acd-4f4f-a0d9-2067af4c58c7)
 
 
-# m) and n) Cracking File Password
+# m) John the Ripper
 In this task our goal is to crack a ZIP archive password provided in the article.
 
 ## Installation
@@ -101,7 +101,7 @@ First we will need to install some tools and libraries:
 After executing the second command, I got an error in finding the package "zlib-gst".
 After doing some searching in the web, I decided to execute the command again without this package.
 
-## John the Ripper
+## Compiling
 After installing the tools and packages, we will then proceed to clone John (project) into our directory and do some configurations:
 
     git clone --depth=1 https://github.com/openwall/john.git
@@ -163,6 +163,38 @@ Now to show the content of the secret file.
 ![image](https://github.com/user-attachments/assets/e4981149-c983-4f66-9cd7-5ae8331d2cad)
 
 We have now cracked our first file password. (Karvinen 9.2.2023)
+
+# n) Crack a zip file password
+After learning how to crack zip files let us crack our own zip file.
+
+First we will create a txt file and zip the file with a password.
+
+    nano gorillanote.txt
+    zip -e secretstash.zip gorillanote.txt
+
+After that we will run our previously learned commands to extract the hash.
+
+    $HOME/john/run/zip2john secretstash.zip >secretstash.zip.hash
+
+![image](https://github.com/user-attachments/assets/9c7b3c27-5389-4450-93f7-d56db4bd7405)
+
+At last, execute the attack.
+
+    $HOME/john/run/john secretstash.zip.hash
+
+![image](https://github.com/user-attachments/assets/6b677ec0-9b9c-4a7a-b69d-a6ffd1c3d652)
+
+The attack was succesful.
+
+Let us see what is in the zip file.
+
+    unzip secretstash.zip
+
+![image](https://github.com/user-attachments/assets/54e89d78-a343-4159-8798-68393b17ff19)
+
+![image](https://github.com/user-attachments/assets/dd13d91d-beac-47b0-b6c9-f1f16b503e8b)
+
+The zip file contained a message.
 
 
 # References
