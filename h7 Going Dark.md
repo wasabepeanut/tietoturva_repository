@@ -19,4 +19,5 @@
 
 # References
 Shavers, B. & Bair, J. 3.2016. Hiding Behind the Keyboard: Chapter 2. The Tor Browser. Syngress. URL: https://learning.oreilly.com/library/view/hiding-behind-the/9780128033524/. Accessed: 10.3.2025. 
+
 Quintin, C. 1.7.2024. 7 Things You Should Know About Tor. Electronic Frontier Foundation. URL: https://www.eff.org/event/effecting-change-there-hope-social-media. Accessed: 9.3.2025.
