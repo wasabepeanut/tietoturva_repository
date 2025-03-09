@@ -1,0 +1,22 @@
+# 7 Things about Tor
+- Despite Tor being old, it still remains to be effective tool.
+- In the right hands, it proves to be a very useful tool in providing security and anonymity.
+- Has no backdoor, meaning that no one should be able to "cheat" their way through Tor's security.
+- Is legal to use and not as hard as it seems.
+- Fairly good speed for a open-source tool.
+- Tor should not be abused (e.g. criminal activities) and the user should be aware of his actions while using Tor. (Quintin 1.7.2024)
+
+
+# Hiding Behind the Keyboard
+## Introduction
+- Also known as "The Onion Router", Tor is a modified version of Mozilla Firefox.
+- In a nutshell, Tor hides the user's IP Address and makes it extremely hard to trace without the correct methods.
+- Free to download and one of the easiest tools for browsing anonymously.
+
+## History and Intended Use
+ 
+
+
+# References
+Shavers, B. & Bair, J. 3.2016. Hiding Behind the Keyboard: Chapter 2. The Tor Browser. Syngress. URL: https://learning.oreilly.com/library/view/hiding-behind-the/9780128033524/. Accessed: 10.3.2025. 
+Quintin, C. 1.7.2024. 7 Things You Should Know About Tor. Electronic Frontier Foundation. URL: https://www.eff.org/event/effecting-change-there-hope-social-media. Accessed: 9.3.2025.
