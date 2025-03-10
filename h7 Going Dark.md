@@ -14,8 +14,20 @@
 - Free to download and one of the easiest tools for browsing anonymously.
 
 ## History and Intended Use
- 
+- Initially developed by the US government in 2002. 
+- Intention is to provide anonymosity in short.
+- Tor is maintained and improved by privacy experts.
 
+## How the Onion Router Works
+- Directs the user's route through random random relays, The path also changes every now and then.
+- The complexity of the multi-layered path makes the tracking almost impossible.
+
+## Tracking Criminals Using Tor
+- Most cases of successful in deanonymization is due to exploitations in users using Tor.
+- The biggest weakness in Tor is the user itself. (Shavers & Bair 3.2016)
+
+
+# Tor Installation
 
 # References
 Shavers, B. & Bair, J. 3.2016. Hiding Behind the Keyboard: Chapter 2. The Tor Browser. Syngress. URL: https://learning.oreilly.com/library/view/hiding-behind-the/9780128033524/. Accessed: 10.3.2025. 
