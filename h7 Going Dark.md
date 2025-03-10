@@ -31,27 +31,38 @@
 In this task I will we installing Tor for my Virtual Box.
 For the installation option, I chose to download it from the official Tor Project website.
 
-First I downloaded the Tor browser file for Linux and extracted the file to the current folder (Downloads/). After extracting I followed the manual and clicked on the "start-tor-browser.desktop" file.
+First I downloaded the Tor browser file for Linux and extracted the file to the current folder (Downloads/). After extracting I followed the manual and clicked on the "start-tor-browser.desktop" file. (Tor Project)
+
 ![image](https://github.com/user-attachments/assets/9c0d871e-584e-4646-b00b-e2e6ad76a618)
 
 After clicking Connect.
+
 ![image](https://github.com/user-attachments/assets/6ca0497c-8ba7-4d31-9e65-cefdab898501)
 
-Seems like the search engine for Tor is "DuckDuckGo". I have never heard of it, but apparently it should work like any other search engine, with more security. After searching something, I noticed that it also had a very similar look to Google's search engine.
+Seems like the search engine for Tor is "DuckDuckGo". I have never heard of it, but apparently it should work like any other search engine, with more security (DuckDuckGo 2025). After searching something, I noticed that it also had a very similar look to Google's search engine.
+
 ![image](https://github.com/user-attachments/assets/db0f8c7e-974d-4983-ba31-f0f194a8d887)
 
 As we can see here, Youtube works fine (I couldn't watch the actual video, because I had to log in).
 
 After this I also tried the "onionize" button, which can be seen in the URL's which end with ".onion".
+
 ![image](https://github.com/user-attachments/assets/5a3d3ac8-cbc7-4494-9aa0-ad53cf3b25dc)
+
+**Amazon**
 
 ![image](https://github.com/user-attachments/assets/05861287-4324-4902-b349-43c7363914be)
 
+**Supercell**
+
 ![image](https://github.com/user-attachments/assets/b9d4b0c2-a950-45df-ae1c-58ffddaf629c)
+
+**Reddit**
 
 ![image](https://github.com/user-attachments/assets/ce6e4a1e-b24f-4de7-ab1e-386b7dc9bef3)
 
 I tried all of the sites mentioned in the task and they seemed to work fine. I could also see that it originally suggested me the French version of Amazon, because "my" IP address was in France. 
+
 ![image](https://github.com/user-attachments/assets/3114442d-0e15-4192-9428-98f191b40d52)
 
 I checked the Tor circuit for a while and noticed that after waiting a little, the IP's changed. I could also change the circuit manually by pressing the button on the bottom. 
