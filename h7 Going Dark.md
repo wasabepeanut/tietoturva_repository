@@ -35,6 +35,9 @@ First I downloaded the Tor browser file for Linux and extracted the file to the 
 
 ![image](https://github.com/user-attachments/assets/9c0d871e-584e-4646-b00b-e2e6ad76a618)
 
+After clicking Connect.
+
+
 
 
 # References
