@@ -33,6 +33,8 @@ For the installation option, I chose to download it from the official Tor Projec
 
 First I downloaded the Tor browser file for Linux and extracted the file to the current folder (Downloads/). After extracting I followed the manual and clicked on the "start-tor-browser.desktop" file.
 
+![image](https://github.com/user-attachments/assets/9c0d871e-584e-4646-b00b-e2e6ad76a618)
+
 
 
 # References
