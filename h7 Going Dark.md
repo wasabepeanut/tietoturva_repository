@@ -39,10 +39,14 @@ After clicking Connect.
 
 ![image](https://github.com/user-attachments/assets/6ca0497c-8ba7-4d31-9e65-cefdab898501)
 
+Seems like the search engine for Tor is "DuckDuckGo". I have never heard of it, but apparently it should work like any other search engine, with more security. 
+
 
 
 
 # References
+DuckDuckGo. 2025. URL: https://duckduckgo.com/. Accessed: 10.3.2025.
+
 Shavers, B. & Bair, J. 3.2016. Hiding Behind the Keyboard: Chapter 2. The Tor Browser. Syngress. URL: https://learning.oreilly.com/library/view/hiding-behind-the/9780128033524/. Accessed: 10.3.2025. 
 
 Quintin, C. 1.7.2024. 7 Things You Should Know About Tor. Electronic Frontier Foundation. URL: https://www.eff.org/event/effecting-change-there-hope-social-media. Accessed: 9.3.2025.
